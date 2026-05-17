@@ -276,22 +276,3 @@ Soft-score results:
 Hard-score results:
 
 ![Hard score results](assets/hard_score_results.png)
-
-## Known Limitations
-
-- The current evaluation pipeline depends on an OpenAI-compatible LLM judge.
-- End-to-end evaluation therefore requires an API key for `T2T_llm_judge.py`.
-- `qa_pairs` is the only supported QA field. Alternative field names such as `qa`, `qa_list`, or `qaPairs` are not part of the public schema.
-- `short_description` is the supported prompt field. Legacy typos such as `short_desription` are not part of the public schema.
-- `showo` currently still requires a config file via `--config`.
-- Multi-GPU execution support depends on the backend implementation and local runtime setup.
-- `bagel` and `showo` wrappers in this repository assume additional local modules that are not included here.
-
-## Recommendations For Open-Sourcing
-
-If you plan to publish this repository broadly, the next high-impact additions would be:
-
-- Public backend setup instructions for Janus/BAGEL/Show-o
-- A fully reproducible environment file for each backend
-- A tiny smoke-test benchmark split
-- Example expected outputs for one successful run
