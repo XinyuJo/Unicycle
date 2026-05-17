@@ -1,0 +1,7 @@
+tqdm
+openai
+numpy
+Pillow
+torch
+transformers
+accelerate

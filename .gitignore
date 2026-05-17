@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+
+.DS_Store
+.idea/
+.vscode/
+
+# Local outputs
+output/
+outputs/
+results/
+runs/
+tmp/
+temp/
+
+# Generated benchmark artifacts
+*.rank*.jsonl
+*_predictions.jsonl
+*_judged.jsonl
+*_question_scores.jsonl
+*_prompt_scores.jsonl
+
+ckpts/
+models/
