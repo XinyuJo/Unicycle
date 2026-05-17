@@ -101,7 +101,7 @@ def build_judge_command(args: argparse.Namespace, prediction_path: Path, judged_
 def build_metric_command(judged_path: Path, question_out: Path, prompt_out: Path) -> List[str]:
     return [
         sys.executable,
-        str(ROOT / "T2T_metric_1.py"),
+        str(ROOT / "metrics_t2t.py"),
         "--input",
         str(judged_path),
         "--question_out",

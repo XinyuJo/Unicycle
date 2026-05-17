@@ -39,7 +39,6 @@ inference/
 evaluation/
   run_t2t_eval.py
   T2T_llm_judge.py
-  T2T_metric_1.py
   metrics_t2t.py
 assets/
   *.png
